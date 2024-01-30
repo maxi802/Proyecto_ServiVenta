@@ -1,0 +1,92 @@
+[
+    {
+        "id": "servicio-01",
+        "titulo": "Servicio de Vajilla",
+        "imagen": "../img/vajilla.jpg",
+        "categoria": {
+            "nombre": "Servicios de Vajilla",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicio-02",
+        "titulo": "Servicios de DJ",
+        "imagen": "../img/dj.jpg",
+        "categoria": {
+            "nombre": "Servicio de DJ",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicio-03",
+        "titulo": "Servicio de Decoracion",
+        "imagen": "../img/decoracion.jpeg",
+        "categoria": {
+            "nombre": "Servicio de Decoracion",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicio-04",
+        "titulo": "Servicio de Cocina",
+        "imagen": "../img/cocina.jpg",
+        "categoria": {
+            "nombre": "Servicio de Cocina",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicios-05",
+        "titulo": "Servicio de Limpieza",
+        "imagen": "../img/limpieza.jpg",
+        "categoria": {
+            "nombre": "Servicio de Limpieza",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicios-06",
+        "titulo": "Servicio de Mozos",
+        "imagen": "../img/mozo.jpg",
+        "categoria": {
+            "nombre": "Servicio de Mozos",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicios-07",
+        "titulo": "Servicio de Fotografia",
+        "imagen": "../img/fotografia.jpg",
+        "categoria": {
+            "nombre": "Servicio de Fotografia",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicios-08",
+        "titulo": "Servicio de Hospedaje",
+        "imagen": "../img/hospedaje1.jpg",
+        "categoria": {
+            "nombre": "Servicio de Hospedaje",
+            "id": "servicios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "servicio-09",
+        "titulo": "Servicio de Bartender",
+        "imagen": "../img/bartender.jpg",
+        "categoria": {
+            "nombre": "Servicio de Bartender",
+            "id": "servicios"
+        },
+        "precio": 1000
+    }
+]
