@@ -21,7 +21,7 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
 
 
 function cargarProductos(productosElegidos) {
-
+    tituloPrincipal.innerText = "Explora nuestros servicios";
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
@@ -85,24 +85,24 @@ if (productosEnCarritoLS) {
 function agregarAlCarrito(e) {
 
     Toastify({
-        text: "Producto agregado",
+        text: "¡Servicio añadido al carrito con éxito!",
         duration: 3000,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
-          borderRadius: "2rem",
-          textTransform: "uppercase",
-          fontSize: ".75rem"
+            background: "linear-gradient(to right, #3498db, #2980b9)",  // Cambia el fondo del mensaje
+            borderRadius: "2rem",
+            textTransform: "uppercase",
+            fontSize: ".75rem",
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-          },
-        onClick: function(){} // Callback after click
-      }).showToast();
+            x: '1.5rem', // horizontal axis - puede ser un número o una cadena que indique la unidad. eg: '2em'
+            y: '1.5rem' // vertical axis - puede ser un número o una cadena que indique la unidad. eg: '2em'
+        },
+        onClick: function () { } // Callback después del clic
+    }).showToast();
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
@@ -123,4 +123,11 @@ function agregarAlCarrito(e) {
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
+
+    // Actualizo el mensaje del carrito
+    if (nuevoNumerito > 0) {
+        document.querySelector("#numerito").innerText = `${nuevoNumerito}`;
+    } else {
+        document.querySelector("#numerito").innerText = "";
+    }
 }
